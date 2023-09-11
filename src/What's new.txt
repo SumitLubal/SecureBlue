@@ -1,0 +1,427 @@
+LogonExpert
+Version History
+---------------------
+
+Version 7.1.2 (January 2, 2016)
+
+  Fixed:
+
+    * Automatic logon to Windows 8/10 systems where there is user without password
+
+
+Version 7.1.1 (December 4, 2015)
+
+  Fixed:
+
+    * Issue with unlocking via command line utility on Windows configurations with Ctrl+Alt+Del request disabled
+    * Issue with bypassing legal notice on Windows configurations with Ctrl+Alt+Del request disabled
+    * Issue with logging on via command line utility without initial configuration
+
+
+Version 7.1 (November 20, 2015)
+
+  Added:
+
+    * Single command line option to log off all users logged into machine (le.exe /logoff *)
+
+  Fixed:
+
+    * Issue with logging on user with ":" in their password via command line utility
+    * Issue with unlocking disconnected user session via command line utility
+
+
+Version 7.0.2 (November 11, 2015)
+
+  Fixed:
+
+    * Issue with bypassing logon banner
+
+
+Version 7.0.1 (October 28, 2015)
+
+  Fixed:
+
+    * Issue with computer wake-up on Windows 10
+
+
+Version 7.0 (October 20, 2015)
+
+  Added:
+
+    * Full Windows 10 support
+
+
+Version 6.4.1 (September 22, 2015)
+
+  Fixed:
+
+    * Issue with starting LogonExpert on some Windows configurations ("LookupAccountName function failed" error message)
+
+
+Version 6.4 (July 16, 2015)
+
+  Fixed:
+
+    * Logon issue caused by Adobe Reader update.
+
+
+Version 6.3.9 (June 2, 2015)
+
+  Fixed:
+
+    * Canceling logon with Shift key not working since version 6.3.8
+    * Legal Notice not getting bypassed in some rare cases
+
+
+Version 6.3.8 (April 17, 2015)
+
+  Improved:
+
+    * Detection of cloned Windows or pre-configured LogonExpert instances and settings
+
+  Fixed:
+
+    * Issue with sequence of scheduled tasks that made computer unwakeable by logon task with wake-up option enabled
+    * Issue with sequence of scheduled tasks that forced user account to re-log on after logoff task was executed
+    * Issue with autologon on multi-monitor computers running Windows 8.1
+    * Issue with RDP session getting disconnected when attempting to remote into computer that had been manually woken up
+    * Minor GUI issues
+
+
+Version 6.3.7 (December 16, 2014)
+
+  Fixed:
+
+    * Issue with delayed autologon (when console session was logged on manually within delayed period)
+    * Issue with automatic unlock (when session was disconnected, not locked)
+
+
+Version 6.3.6 (September 12, 2014)
+
+  Added:
+
+    * Automatic and command line logon for non-domain accounts with blank password
+
+  Improved:
+
+    * LogonExpert Administrator interface
+    * Windows 8 Live ID account autologon
+
+  Fixed:
+
+    * "Illegal instruction exception" appearing on earlier Pentium III CPUs (on Windows Vista and later)
+
+
+Version 6.3.5 (March 7, 2014)
+
+  Added:
+
+    * Official Windows Server 2012 R2 support
+
+  Improved:
+
+    * Handling of logon errors (on Windows Vista and later)
+
+
+Version 6.3.4 (January 17, 2014)
+
+  Fixed:
+
+    * Issue with LogonExpert behavior on terminal server with "Keep computer logged on" option enabled
+
+
+Version 6.3.3 (January 10, 2014)
+
+  Fixed:
+
+    * Issue with "Fast Startup" feature (on Windows 8 and 8.1)
+
+
+Version 6.3.2 (November 26, 2013)
+
+  Fixed:
+
+    * Logon issue with screensaver enabled or display turned off (on Windows 8 and Server 2012)
+
+
+Version 6.3.1 (November 5, 2013)
+
+  Fixed:
+
+    * Rare autologon issue (on Windows 8.1)
+    * Rare autologon issue (on Windows Server 2008 R2 with Legal Notice disabled)
+
+
+Version 6.3 (October 10, 2013)
+
+  Added:
+
+    * Windows 8.1/Server 2012 R2 compatibility
+
+  Fixed:
+
+    * Issue with start of LogonExpert Service on Windows boot
+
+  Improved:
+
+    * Handling of license count over network
+
+
+Version 6.2.4 (September 4, 2013)
+
+  Fixed:
+
+    * Handling of RDP session connecting and disconnecting
+
+  Improved:
+
+    * Handling of user accounts with no password on Windows 8
+
+
+Version 6.2.3 (August 9, 2013)
+
+  Fixed:
+
+    * Issue with LogonExpert Service prioritization loading
+
+
+Version 6.2.2 (August 6, 2013)
+
+  Fixed:
+
+    * User unlocking issue (command line tool)
+    * Minor GUI bugs
+
+
+Version 6.2.1 (July 16, 2013)
+
+  Fixed:
+
+    * Post-wakeup auto-unlock handling issue
+
+
+Version 6.2 (July 15, 2013)
+
+  Added:
+
+    * Command line-based multi-user logon
+    * Executing scheduled logon/logoff tasks with autologon on startup being either enabled or disabled
+
+  Improved:
+
+    * LogonExpert Administrator interface
+    * Post-wakeup auto-unlock handling
+
+  Updated:
+
+    * User manual (help file)
+
+  Fixed:
+
+    * User switch treated as computer lock
+    * Minor bugs
+
+
+Version 6.1.2 (May 30, 2013)
+
+  Fixed:
+
+    * Intercommunication Error #2 appearing with Windows sessions being changed very often (on Windows Vista and later)
+    * Occasional system blocks with black screen (on Windows 8 and Windows Server 2012)
+    * Logon/unlock command line switches not working with autologon disabled in LogonExpert Administrator
+    * Domain name getting reset when saving settings on some configurations
+
+
+Version 6.1.1 (February 22, 2013)
+
+  Added:
+
+    * Unlocking previously locked computer with scheduled logon task
+
+
+Version 6.1 (February 6, 2013)
+
+  Fixed:
+
+    * Incorrect handling of new RDP connections with autounlock feature enabled
+
+
+Version 6.0 (January 22, 2013)
+
+  Added:
+
+    * Automatic and command line based unlocking functionality
+    * Option to bypass Windows 8/Server 2012 Start screen to log on or unlock directly to desktop
+
+  Updated:
+
+    * User manual (help file)
+
+  Removed:
+
+    * Windows 2000 support
+
+
+Version 5.4.2 (October 29, 2012)
+
+  Fixed:
+
+    * Issue with bypassing logon banners configured not through Group Policy (on Windows Vista and later)
+
+Version 5.4.1 (March 14, 2012)
+
+  Fixed:
+
+    * Issue with /enable and /disable command line switches 
+
+Version 5.4 (March 5, 2012)
+
+  Added:
+
+    * Windows 8 compatibility
+
+Version 5.3.4 (January 6, 2012)
+
+  Fixed:
+
+    * Windows 2000 Professional, Server and Terminal Server automatic re-logon issue
+
+Version 5.3.3 (December 9, 2011)
+
+  Fixed:
+
+    * Memory leak occurring on Windows Vista and later with "Lock computer after logon"
+      option enabled and no delay set
+
+Version 5.3.2 (September 8, 2011)
+
+  Fixed:
+
+    * Ctrl-Alt-Del emulation issue on some Windows 7 based tablet PCs and laptops
+    * Autologon issue on some fast Windows Vista PCs
+
+Version 5.3.1 (July 19, 2011)
+
+  Fixed:
+
+    * Problem with scheduled autologon after waking up from scheduled post-logoff sleep.
+
+Version 5.3 (July 1, 2011)
+
+  Added:
+
+    * Option to put computer into sleep mode for logoff tasks
+
+  Updated:
+
+    * User manual (help file)
+
+  Improved:
+
+    * Autologon process on Windows 2000/XP/Server 2003
+    * Performance on saving multiple scheduled tasks
+
+  Fixed:
+
+    * Issue with re-logon after remotely initiated logoff
+    * Issue with user privileges elevation on Windows Vista and higher
+    * Problem with running /setcredentials command with space separated parameters
+
+Version 5.2 (April 7, 2011)
+
+  Added:
+
+    * Re-logon after user-initiated logoff
+
+  Updated:
+
+    * User manual (help file)
+
+Version 5.1.2 (March 11, 2011)
+
+  Added:
+
+    * Checking and notifying of registry-configured autologon
+
+  Fixed:
+
+    * Administrative rights detection issue
+    * Windows 7 Ultimate autologon issue
+    * Windows 2008 R2 Server Core autologon issue
+
+Version 5.1.1 (November 2, 2010)
+
+  Fixed:
+
+    * Issue with empty scheduled task names
+    * Issue with blank user account passwords
+    * Issue with "LogonExpert is not configured" notifications
+
+
+Version 5.1 (October 11, 2010)
+
+  Added:
+
+    * "/force" command line parameter
+
+  Improved:
+
+    * Credentials validation
+
+  Fixed:
+
+    * Issue with saving and editing multiple scheduled tasks
+    * Deadlock on Windows Server 2008/7 limited accounts with UAC turned off
+
+
+Version 5.0 (August 26, 2010)
+
+  Added:
+
+    * Ability to control LogonExpert via command line both locally and remotely
+    * Computer wake-up for scheduled tasks
+    * Ability to detect third-party GINA libraries
+    * User manual (help file)
+
+  Improved:
+
+    * Autologon algorithm on Windows 2000/XP/Server 2003
+    * Autologon algorithm on non-English versions of Windows Vista/Server 2008/7
+    * Credentials encryption (through tying to BIOS serial number)
+    * Initial autologon speed (through raising LogonExpert in service load order)
+    * LogonExpert Administrator interface
+    * Post-autologon lock speed
+    * Service core optimization
+
+  Fixed:
+
+    * Improper screen color depth change handling for LogonExpert logo on Windows 2000/XP/Server 2003
+    * Issue with autologon interruption using Shift key
+    * Issue with notification message boxes on Windows Vista/Server 2008/7
+    * Issue with service self restart involving excessive CPU utilization
+    * Issue with maintenance periods
+
+
+Version 4.3 (August 10, 2009)
+
+  Added:
+
+    * Windows 7/Server 2008 R2 compatibility
+    * Workstation lock delay
+    * Windows Vista/Server 2008/7 administrator password request to elevate LogonExpert rights
+    * Option to configure logon banner bypass
+    * Option to hide LogonExpert logo during logon
+    * Automatic license file detection and acceptance
+
+  Improved:
+
+    * Logon.ini and Schedule.ini files caching for read/write operations reducing
+    * CPU utilization on Windows XP
+
+  Fixed:
+
+    * LogonExpert service display name
+    * Screen resolution and color depth handling
+    * Logon credentials verifying
+    * AM/PM issue in Task Scheduler
+    * Lots of minor GUI bugs
